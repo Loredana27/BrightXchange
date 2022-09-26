@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "s3_id",
+      "type": "java.lang.String",
+      "description": "Description for s3_id."
+    },
+    {
+      "name": "s3_key",
+      "type": "java.lang.String",
+      "description": "Description for s3_key."
+    },
+    {
+      "name": "s3_name",
+      "type": "java.lang.String",
+      "description": "Description for s3_name."
+    },
+    {
+      "name": "s3_url_prod",
+      "type": "java.lang.String",
+      "description": "Description for s3_url_prod."
+    },
+    {
+      "name": "s3_url_cat",
+      "type": "java.lang.String",
+      "description": "Description for s3_url_cat."
+    }
+  ]
+}
