@@ -1,8 +1,8 @@
 import {atom} from "jotai";
 
 export const BASE_PATH = "http://localhost:8888";
-export const USER_PATH = "http://localhost:8888/api/user";
-export const ADMIN_PATH = "http://localhost:8888/api/admin";
+export const USER_PATH = `${BASE_PATH}/api/user`;
+export const ADMIN_PATH = `${BASE_PATH}/api/admin`;
 
 export const USER = atom({
 	token: undefined,

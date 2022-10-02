@@ -11,11 +11,11 @@ const LandingPage = ({user}) => {
 	const [state, setState] = useState({name: ""});
 	useEffect(() => {
 		if (state.name.trim() === "") {
-			fetch("http://localhost:8888/categories", {method: "GET"})
+			fetch(`${BASE_PATH}/categories`, {method: "GET"})
 				.then((response) => response.json())
 				.then((re) => setCategories(re));
 		} else {
-			fetch(`http://localhost:8888/categories/search/${state.name}`, {
+			fetch(`${BASE_PATH}/categories/search/${state.name}`, {
 				method: "GET",
 			})
 				.then((response) => response.json())
