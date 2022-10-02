@@ -1,61 +1,61 @@
 /* Bulma Utilities */
 .container {
-    display: grid;
-    grid-row-gap: 30px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+	display: grid;
+	grid-row-gap: 30px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+	.container {
+		grid-template-columns: 1fr;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 1216px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 769px), print {
-    .container {
-        grid-column-gap: 30px;
-    }
+	.container {
+		grid-column-gap: 30px;
+	}
 }
 
 .category-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .category-card-image {
-    box-shadow: 0 0 4px 2px black;
+	box-shadow: 0 0 4px 2px black;
 }
 
 .category-card-title {
-    font-size: 25px;
-    margin-top: 10px;
-    float: bottom;
-    text-align: center;
+	font-size: 25px;
+	margin-top: 10px;
+	float: bottom;
+	text-align: center;
 }
 
 /*# sourceMappingURL=first_page.css.map */

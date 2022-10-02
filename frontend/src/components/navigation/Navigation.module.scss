@@ -1,363 +1,363 @@
 @import "../../css-libraries/bulma/sass/utilities/_all";
 
 .nav {
-  @include until(1045px) {
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #242526;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #3A3B3C;
-    }
-  }
+	@include until(1045px) {
+		::-webkit-scrollbar {
+			width: 10px;
+		}
+		::-webkit-scrollbar-track {
+			background: #242526;
+		}
+		::-webkit-scrollbar-thumb {
+			background: #3A3B3C;
+		}
+	}
 
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: -1px;
-  z-index: 500;
-  width: 100%;
-  background: #242526;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -1px;
+	z-index: 500;
+	width: 100%;
+	background: #242526;
 
-  & input {
-    display: none;
-  }
+	& input {
+		display: none;
+	}
 
-  & .wrapper {
-    .showDrop:checked ~ .dropMenu,
-    .showMega:checked ~ .megaBox {
-      @include until(1045px) {
-        max-height: 100%;
-      }
-    }
+	& .wrapper {
+		.showDrop:checked ~ .dropMenu,
+		.showMega:checked ~ .megaBox {
+			@include until(1045px) {
+				max-height: 100%;
+			}
+		}
 
-    position: relative;
-    max-width: 90%;
-    padding: 0 30px;
-    height: 70px;
-    line-height: 70px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+		position: relative;
+		max-width: 90%;
+		padding: 0 30px;
+		height: 70px;
+		line-height: 70px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-    & .logo a, & .logo span {
-      color: #f2f2f2;
-      font-weight: 500;
-      text-decoration: none;
-      padding: 5px;
-      margin: 5px;
-      border-radius: 10px;
-      cursor: pointer;
+		& .logo a, & .logo span {
+			color: #f2f2f2;
+			font-weight: 500;
+			text-decoration: none;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 10px;
+			cursor: pointer;
 
-      &:hover {
-        background: #3A3B3C;
-      }
+			&:hover {
+				background: #3A3B3C;
+			}
 
-      @include mobile {
-        font-size: 20px;
-      }
-      @include until(450px) {
-        font-size: 20px;
-      }
-      @include from(450px) {
-        font-size: 25px;
-      }
-    }
+			@include mobile {
+				font-size: 20px;
+			}
+			@include until(450px) {
+				font-size: 20px;
+			}
+			@include from(450px) {
+				font-size: 25px;
+			}
+		}
 
-    & .navLinks {
-      display: inline-flex;
-
-
-      @include until(1045px) {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        max-width: 350px;
-        top: 0;
-        left: -100%;
-        background: #242526;
-        display: block;
-        padding: 50px 10px;
-        line-height: 50px;
-        overflow-y: auto;
-        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
-        transition: all 0.3s ease;
-      }
-
-      & .closeBtn {
-        position: absolute;
-        right: 30px;
-        top: 20px;
-        font-size: 50px;
-        color: white;
-        display: none;
-        @include until(1045px) {
-          display: block;
-        }
-      }
+		& .navLinks {
+			display: inline-flex;
 
 
-      & .link {
-        list-style: none;
+			@include until(1045px) {
+				position: fixed;
+				height: 100vh;
+				width: 100%;
+				max-width: 350px;
+				top: 0;
+				left: -100%;
+				background: #242526;
+				display: block;
+				padding: 50px 10px;
+				line-height: 50px;
+				overflow-y: auto;
+				box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
+				transition: all 0.3s ease;
+			}
 
-        @include until(1045px) {
-          margin: 15px 10px;
-        }
-
-        & a {
-          color: #f2f2f2;
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: 500;
-          padding: 9px 15px;
-          border-radius: 5px;
-          transition: all 0.3s ease;
-          max-width: 100px;
-          flex-wrap: wrap;
-
-          &:hover {
-            background: #3A3B3C;
-          }
-
-          @include until(1045px) {
-            padding: 0 20px;
-            display: block;
-            font-size: 20px;
-          }
-        }
-
-        &:hover {
-          & .dropMenu, & .megaBox {
-            transition: all 0.3s ease;
-            top: 70px;
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-
-      & .mobileItem {
-        display: none;
-        @include until(1045px) {
-          display: block;
-          color: #f2f2f2;
-          font-size: 20px;
-          font-weight: 500;
-          padding-left: 20px;
-          cursor: pointer;
-          border-radius: 5px;
-          transition: all 0.3s ease;
-
-          &:hover {
-            background: #3A3B3C;
-          }
-        }
-      }
-
-      & .desktopItem {
-        @include until(1045px) {
-          display: none;
-        }
-      }
-
-      & .dropMenu {
-        position: absolute;
-        background: #242526;
-        width: 180px;
-        line-height: 45px;
-        top: 85px;
-        opacity: 0;
-        visibility: hidden;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-
-        @include until(1045px) {
-          position: static;
-          opacity: 1;
-          top: 65px;
-          visibility: visible;
-          padding-left: 20px;
-          width: 100%;
-          max-height: 0;
-          overflow: hidden;
-          box-shadow: none;
-          transition: all 0.3s ease;
-        }
-
-        & .link {
-          @include until(1045px) {
-            margin: 0;
-          }
-
-          & a {
-            width: 100%;
-            display: block;
-            padding: 0 0 0 15px;
-            font-weight: 400;
-            border-radius: 0;
-            @include until(1045px) {
-              border-radius: 5px;
-              font-size: 18px;
-            }
-          }
-        }
-      }
-
-      & .megaBox {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        padding: 0 30px;
-        top: 85px;
-        opacity: 0;
-        visibility: hidden;
-
-        @include until(1045px) {
-          position: static;
-          top: 65px;
-          opacity: 1;
-          visibility: visible;
-          padding: 0 20px;
-          max-height: 0;
-          overflow: hidden;
-          transition: all 0.3s ease;
-        }
-
-        & .content {
-          background: #242526;
-          padding: 25px 20px;
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-
-          @include until(1045px) {
-            box-shadow: none;
-            flex-direction: column;
-            padding: 20px 20px 0 20px;
-          }
-
-          & .row {
-            width: calc(25% - 30px);
-            line-height: 45px;
-
-            @include until(1045px) {
-              width: 100%;
-              margin-bottom: 15px;
-              border-top: 1px solid rgba(255, 255, 255, 0.08);
-              &:nth-child(1),
-              &:nth-child(2) {
-                border-top: 0;
-              }
-            }
-
-            & img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-
-            & header {
-              color: #f2f2f2;
-              font-size: 20px;
-              font-weight: 500;
-            }
-
-            & .megaLinks {
-              margin-left: -40px;
-              border-left: 1px solid rgba(255, 255, 255, 0.09);
-              @include until(1045px) {
-                border-left: 0;
-                padding-left: 15px;
-              }
+			& .closeBtn {
+				position: absolute;
+				right: 30px;
+				top: 20px;
+				font-size: 50px;
+				color: white;
+				display: none;
+				@include until(1045px) {
+					display: block;
+				}
+			}
 
 
-              & .link {
-                @include until(1045px) {
-                  margin: 0;
-                }
+			& .link {
+				list-style: none;
 
-                & a {
-                  padding: 0 20px;
-                  color: #d9d9d9;
-                  font-size: 17px;
-                  display: block;
+				@include until(1045px) {
+					margin: 15px 10px;
+				}
 
-                  &:hover {
-                    color: #f2f2f2;
-                  }
-                }
-              }
-            }
+				& a {
+					color: #f2f2f2;
+					text-decoration: none;
+					font-size: 18px;
+					font-weight: 500;
+					padding: 9px 15px;
+					border-radius: 5px;
+					transition: all 0.3s ease;
+					max-width: 100px;
+					flex-wrap: wrap;
 
-            & .link {
-              padding: 0 20px;
-            }
+					&:hover {
+						background: #3A3B3C;
+					}
 
-            & header {
-              font-size: 19px;
-            }
-          }
-        }
-      }
-    }
+					@include until(1045px) {
+						padding: 0 20px;
+						display: block;
+						font-size: 20px;
+					}
+				}
 
-    .cart {
-      font-size: 25px;
-    }
+				&:hover {
+					& .dropMenu, & .megaBox {
+						transition: all 0.3s ease;
+						top: 70px;
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
 
-    .cartQuantity {
-      position: relative;
-      top: -10px;
-      //left: -10px;
-      z-index: 5;
-      background-color: orange;
-      border-radius: 20px;
-      padding: 0 3px;
-      color: black;
-      font-size: 15px;
-    }
+			& .mobileItem {
+				display: none;
+				@include until(1045px) {
+					display: block;
+					color: #f2f2f2;
+					font-size: 20px;
+					font-weight: 500;
+					padding-left: 20px;
+					cursor: pointer;
+					border-radius: 5px;
+					transition: all 0.3s ease;
 
-    & .showMenuLabel {
-      display: none;
-      font-size: 40px;
-      @include until(1045px) {
-        position: absolute;
-        right: 30px;
-        color: white;
-        display: block;
-        padding-top: 12px;
-      }
+					&:hover {
+						background: #3A3B3C;
+					}
+				}
+			}
 
-      & svg {
-        padding: 10px;
-        border-radius: 5px;
-      }
+			& .desktopItem {
+				@include until(1045px) {
+					display: none;
+				}
+			}
 
-      &:hover {
-        & svg {
-          background-color: #c2c2c2;
-        }
-      }
+			& .dropMenu {
+				position: absolute;
+				background: #242526;
+				width: 180px;
+				line-height: 45px;
+				top: 85px;
+				opacity: 0;
+				visibility: hidden;
+				box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 
-      & svg {
-        background-color: #242526;
-      }
-    }
+				@include until(1045px) {
+					position: static;
+					opacity: 1;
+					top: 65px;
+					visibility: visible;
+					padding-left: 20px;
+					width: 100%;
+					max-height: 0;
+					overflow: hidden;
+					box-shadow: none;
+					transition: all 0.3s ease;
+				}
 
-    & .showMenu {
-      display: none;
-    }
+				& .link {
+					@include until(1045px) {
+						margin: 0;
+					}
 
-    & .showMenu:checked ~ .navLinks {
-      left: 0;
-    }
+					& a {
+						width: 100%;
+						display: block;
+						padding: 0 0 0 15px;
+						font-weight: 400;
+						border-radius: 0;
+						@include until(1045px) {
+							border-radius: 5px;
+							font-size: 18px;
+						}
+					}
+				}
+			}
 
-    & .showMenu:checked ~ .showMenuLabel {
-      display: none;
-    }
-  }
+			& .megaBox {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				padding: 0 30px;
+				top: 85px;
+				opacity: 0;
+				visibility: hidden;
+
+				@include until(1045px) {
+					position: static;
+					top: 65px;
+					opacity: 1;
+					visibility: visible;
+					padding: 0 20px;
+					max-height: 0;
+					overflow: hidden;
+					transition: all 0.3s ease;
+				}
+
+				& .content {
+					background: #242526;
+					padding: 25px 20px;
+					display: flex;
+					width: 100%;
+					justify-content: space-between;
+					box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+					@include until(1045px) {
+						box-shadow: none;
+						flex-direction: column;
+						padding: 20px 20px 0 20px;
+					}
+
+					& .row {
+						width: calc(25% - 30px);
+						line-height: 45px;
+
+						@include until(1045px) {
+							width: 100%;
+							margin-bottom: 15px;
+							border-top: 1px solid rgba(255, 255, 255, 0.08);
+							&:nth-child(1),
+							&:nth-child(2) {
+								border-top: 0;
+							}
+						}
+
+						& img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+
+						& header {
+							color: #f2f2f2;
+							font-size: 20px;
+							font-weight: 500;
+						}
+
+						& .megaLinks {
+							margin-left: -40px;
+							border-left: 1px solid rgba(255, 255, 255, 0.09);
+							@include until(1045px) {
+								border-left: 0;
+								padding-left: 15px;
+							}
+
+
+							& .link {
+								@include until(1045px) {
+									margin: 0;
+								}
+
+								& a {
+									padding: 0 20px;
+									color: #d9d9d9;
+									font-size: 17px;
+									display: block;
+
+									&:hover {
+										color: #f2f2f2;
+									}
+								}
+							}
+						}
+
+						& .link {
+							padding: 0 20px;
+						}
+
+						& header {
+							font-size: 19px;
+						}
+					}
+				}
+			}
+		}
+
+		.cart {
+			font-size: 25px;
+		}
+
+		.cartQuantity {
+			position: relative;
+			top: -10px;
+			//left: -10px;
+			z-index: 5;
+			background-color: orange;
+			border-radius: 20px;
+			padding: 0 3px;
+			color: black;
+			font-size: 15px;
+		}
+
+		& .showMenuLabel {
+			display: none;
+			font-size: 40px;
+			@include until(1045px) {
+				position: absolute;
+				right: 30px;
+				color: white;
+				display: block;
+				padding-top: 12px;
+			}
+
+			& svg {
+				padding: 10px;
+				border-radius: 5px;
+			}
+
+			&:hover {
+				& svg {
+					background-color: #c2c2c2;
+				}
+			}
+
+			& svg {
+				background-color: #242526;
+			}
+		}
+
+		& .showMenu {
+			display: none;
+		}
+
+		& .showMenu:checked ~ .navLinks {
+			left: 0;
+		}
+
+		& .showMenu:checked ~ .showMenuLabel {
+			display: none;
+		}
+	}
 }
 

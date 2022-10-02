@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 const Product = () => {
-  const { productName } = useParams();
+	const {productName} = useParams();
 
-  return <div>THIS IS PRODUCT {productName}</div>;
+	return <div>THIS IS PRODUCT {productName}</div>;
 };
 
 export default Product;

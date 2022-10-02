@@ -1,29 +1,30 @@
 .mainDiv {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
 
-  & .title {
-    font-size: 50px;
-    text-align: center;
-  }
+	& .title {
+		font-size: 50px;
+		text-align: center;
+	}
 
 
+	& .filterDiv {
+		display: flex;
+		flex-direction: row;
+		margin-left: 35px;
+		margin-right: 35px;
 
-  & .filterDiv {
-    display: flex;
-    flex-direction: row;
-    margin-left: 35px;
-    margin-right: 35px;
-    & .limitedInput{
-      max-width: 150px;
-    }
+		& .limitedInput {
+			max-width: 150px;
+		}
 
-    & .numberInput{
-      max-width: 50px;
-    }
-    & .panel{
-      border: 1px solid #c2c2c3;
-    }
-  }
+		& .numberInput {
+			max-width: 50px;
+		}
+
+		& .panel {
+			border: 1px solid #c2c2c3;
+		}
+	}
 }

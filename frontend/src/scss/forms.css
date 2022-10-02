@@ -3,239 +3,239 @@
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap");
 
 #new, #existent {
-    display: none;
+	display: none;
 }
 
 label[for=new] {
-    float: right;
+	float: right;
 }
 
 label[for=new],
 label[for=existent] {
-    border-radius: 5px;
-    border: solid 1px gray;
-    padding: 5px;
+	border-radius: 5px;
+	border: solid 1px gray;
+	padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
-    label[for=new],
-    label[for=existent] {
-        font-size: 15px;
-    }
+	label[for=new],
+	label[for=existent] {
+		font-size: 15px;
+	}
 }
 
 #existent:checked ~ label[for=existent],
 #new:checked ~ label[for=new] {
-    box-shadow: 0 0 2px 2px #01bdbe;
+	box-shadow: 0 0 2px 2px #01bdbe;
 }
 
 #existent-div, #new-div {
-    display: none;
-    border-radius: 10px;
+	display: none;
+	border-radius: 10px;
 }
 
 #existent:checked ~ #existent-div,
 #new:checked ~ #new-div {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
 }
 
 h1 {
-    font-size: 30px !important;
-    font-weight: bold !important;
-    text-align: center;
-    width: 100%;
+	font-size: 30px !important;
+	font-weight: bold !important;
+	text-align: center;
+	width: 100%;
 }
 
 h2 {
-    font-size: 25px !important;
-    font-weight: bold !important;
-    text-align: right;
+	font-size: 25px !important;
+	font-weight: bold !important;
+	text-align: right;
 }
 
 form {
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 2px black;
-    font-family: "Zilla Slab", serif;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 7px 2px black;
+	font-family: "Zilla Slab", serif;
 }
 
 @media screen and (max-width: 768px) {
-    form {
-        margin: 40px 10% 80px;
-    }
+	form {
+		margin: 40px 10% 80px;
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    form {
-        margin: 40px 15% 80px;
-    }
+	form {
+		margin: 40px 15% 80px;
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
-    form {
-        margin: 40px 20% 80px;
-    }
+	form {
+		margin: 40px 20% 80px;
+	}
 }
 
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
-    form {
-        margin: 40px 25% 80px;
-    }
+	form {
+		margin: 40px 25% 80px;
+	}
 }
 
 @media screen and (min-width: 1408px) {
-    form {
-        margin: 40px 30% 80px;
-    }
+	form {
+		margin: 40px 30% 80px;
+	}
 }
 
 @media screen and (min-width: 769px), print {
-    form {
-        min-width: 320px;
-    }
+	form {
+		min-width: 320px;
+	}
 }
 
 form div {
-    margin-bottom: 10px;
-    min-height: 50px;
+	margin-bottom: 10px;
+	min-height: 50px;
 }
 
 form div button {
-    font-size: 30px;
-    color: #00b89c;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+	font-size: 30px;
+	color: #00b89c;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {
-    form div button {
-        font-size: 15px;
-        padding: 5px;
-    }
+	form div button {
+		font-size: 15px;
+		padding: 5px;
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    form div button {
-        font-size: 20px;
-        padding: 5px;
-    }
+	form div button {
+		font-size: 20px;
+		padding: 5px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    form div button {
-        padding: 10px;
-    }
+	form div button {
+		padding: 10px;
+	}
 }
 
 form div button span {
-    font-size: 30px;
-    color: #00b89c;
-    border-radius: 10px;
+	font-size: 30px;
+	color: #00b89c;
+	border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    form div button span {
-        font-size: 15px;
-    }
+	form div button span {
+		font-size: 15px;
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    form div button span {
-        font-size: 20px;
-    }
+	form div button span {
+		font-size: 20px;
+	}
 }
 
 #submit span:after {
-    content: "»";
-    opacity: 0;
-    transition: 0.5s;
+	content: "»";
+	opacity: 0;
+	transition: 0.5s;
 }
 
 #submit:hover span {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 #submit:hover span:after {
-    opacity: 1;
-    right: 0;
+	opacity: 1;
+	right: 0;
 }
 
 #cancel span:after {
-    content: "«";
-    opacity: 0;
-    transition: 0.5s;
+	content: "«";
+	opacity: 0;
+	transition: 0.5s;
 }
 
 #cancel:hover span {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 #cancel:hover span:after {
-    opacity: 1;
-    right: 0;
+	opacity: 1;
+	right: 0;
 }
 
 button[type=submit] {
-    float: right;
+	float: right;
 }
 
 .drag-area {
-    border: 2px dashed #000000;
-    height: 350px;
-    width: 100%;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px 0;
+	border: 2px dashed #000000;
+	height: 350px;
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px 0;
 }
 
 .drag-area.active {
-    border: 2px solid #000000;
+	border: 2px solid #000000;
 }
 
 .drag-area .icon {
-    font-size: 100px;
-    color: #000000;
+	font-size: 100px;
+	color: #000000;
 }
 
 .drag-area header {
-    font-size: 30px;
-    font-weight: 500;
-    color: #000000;
+	font-size: 30px;
+	font-weight: 500;
+	color: #000000;
 }
 
 .drag-area span {
-    font-size: 25px;
-    font-weight: 500;
-    color: #000000;
-    margin: 10px 0 15px 0;
+	font-size: 25px;
+	font-weight: 500;
+	color: #000000;
+	margin: 10px 0 15px 0;
 }
 
 .drag-area button {
-    padding: 10px 25px;
-    font-size: 20px !important;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+	padding: 10px 25px;
+	font-size: 20px !important;
+	font-weight: 500;
+	border: none;
+	outline: none;
+	background: #fff;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .drag-area img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	border-radius: 5px;
 }
 
 /*# sourceMappingURL=forms.css.map */
