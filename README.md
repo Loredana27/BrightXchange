@@ -1,9 +1,9 @@
-# El-Proyecte-Grande
+<img src="https://raw.github.com/SidorAndrei/El-Proyecte-Grande/development/assets/BrightXchange-logo.png" height=auto width=100% alt="BrightXchange logo">
 
-## About the project
+# About the project
 
-Project was made by L.A.S Team ([Loredana Stefania Mihai](https://github.com/Loredana27), [Marian-Andrei Sidor](https://github.com/SidorAndrei), [Maria-Irina Preda](https://github.com/mariairinapreda)).
-This is a web application for a company that have as main activity e-commerce, basically e-shop.
+Project was made by L.A.S Team (<b>[Loredana Stefania Mihai](https://github.com/Loredana27), [Marian-Andrei Sidor](https://github.com/SidorAndrei), [Maria-Irina Preda](https://github.com/mariairinapreda)</b>).
+This is a web application for a company that have as main activity e-commerce, representing an e-shop.
 
 ## Features
 
@@ -13,6 +13,8 @@ This is a web application for a company that have as main activity e-commerce, b
 - Filter products
 - Cart - add to cart, edit quatity of a product
 - Checkout - pay with PayPal
+
+
 
 ## Tech
 
