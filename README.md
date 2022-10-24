@@ -74,3 +74,16 @@ This is a web application for a company that have as main activity e-commerce, r
 
 ### Project
 - [Docker](https://www.docker.com/)
+
+## Sample photos
+
+<div style="display: grid; grid-template-columns: auto auto auto;column-gap: 10px;row-gap: 10px">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/login.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/admin_mainpage.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/add_category.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/add_product.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/filtered_products.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/register.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/user_mainpage.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/cart_page.png" height="auto" width="100%">
+</div>
