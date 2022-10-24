@@ -5,6 +5,7 @@ import LandingPageCard from "../../wrappers/landing-page-card/LandingPageCard";
 import Navigation from "../../components/navigation/Navigation";
 import TextField from '@mui/material/TextField'
 import classes from "../../scss/Mui.module.scss";
+import {BASE_PATH} from "../../atoms/STORE";
 
 const LandingPage = ({user}) => {
 	const [categories, setCategories] = useState([]);
