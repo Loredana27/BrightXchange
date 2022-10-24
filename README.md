@@ -17,6 +17,31 @@ This is a web application for a company that have as main activity e-commerce, r
 
 
 ## Tech
+<p align="left">
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/react-original.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/java-logo.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/spring_logo-removebg-preview.png" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/javascript-plain.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/css3-original.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/html5-original.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/brand-removebg-preview.png" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/docker.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/Postgresql_elephant.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/IntelliJ_IDEA_Icon.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/git-original.svg" height="auto" width="40">
+
+<img src="https://raw.githubusercontent.com/SidorAndrei/SidorAndrei/master/assets/github-original.svg" height="auto" width="40">
+</p>
 
 ### Server (Back-End)
 #### Programming language
