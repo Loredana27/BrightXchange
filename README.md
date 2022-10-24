@@ -86,4 +86,5 @@ This is a web application for a company that have as main activity e-commerce, r
     <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/register.png" height="auto" width="100%">
     <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/user_mainpage.png" height="auto" width="100%">
     <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/cart_page.png" height="auto" width="100%">
+    <img src="https://raw.githubusercontent.com/SidorAndrei/BrightXchange/development/assets/products_page.png" height="auto" width="100%">
 </div>
